@@ -19,7 +19,14 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "caseSensitive": false
+        }
+      }
+    }
   },
   "browserslist": {
     "production": [
