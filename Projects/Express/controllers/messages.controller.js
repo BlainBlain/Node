@@ -1,5 +1,10 @@
+const path = require("path");
+
 function getMessages(req, res) {
-  res.send("How are you!");
+  res.render("messages", {
+    title: "Messages to my friends",
+    friend: "John",
+  });
 }
 
 function postMessage(req, res) {
